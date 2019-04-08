@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    host: 172.20.10.3
+  redis:
+    host: 172.20.10.3
+  mail:
+    host: smtp.qq.com
+    username: 298692628@qq.com
+    password: bxyitdysvzajbgdi
+server:
+  port: 8090

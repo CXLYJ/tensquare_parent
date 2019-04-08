@@ -1,0 +1,13 @@
+/target
+.classpath  
+.project    
+.settings
+.idea
+*iml
+src/main/webapp/index.html
+src/main/webapp/promotion.html
+src/main/webapp/mercury.html
+src/main/webapp/h5.html
+src/main/webapp/modules/
+src/main/webapp/static/
+/bin/

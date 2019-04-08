@@ -1,0 +1,47 @@
+package Off;
+
+import javax.swing.tree.TreeNode;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * @author ：lyj
+ * @email: : iclyj@iclyj.cn
+ * @date ：2019/4/3 16:14
+ *
+ * 剑指offer-从上往下打印二叉树
+ */
+public class Solution15 {
+
+    /**
+     * 描述
+     *
+     * 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
+     */
+
+    /**
+     * 思路
+     *
+     * 使用一个队列，实现二叉树的层次遍历
+     */
+
+    public ArrayList<Integer> PrintFromTopToBottom(TreeNode root){
+        ArrayList<Integer> resultList = new ArrayList<>();
+        if (root == null)
+            return resultList;
+        Queue<TreeNode> queue = new ArrayDeque<>();
+        queue.add(root);
+        while (queue.size() != 0){ //队列不为空一直进行
+            TreeNode tempRoot = queue.poll(); //出队
+            if (tempRoot.left != null) //左节点不为空，左节点入列
+                queue.offer(tempRoot.left);
+            if (tempRoot.right != null) //右节点不为空，右节点入列
+                queue.offer(tempRoot.right);
+            resultList.add(tempRoot.val); //把出队的节点的值保留下来
+        }
+        return resultList;
+    }
+
+}

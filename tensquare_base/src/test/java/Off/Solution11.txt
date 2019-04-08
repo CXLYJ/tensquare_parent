@@ -1,0 +1,32 @@
+题14：输出一个链表，求出该链表中倒数第k个节点
+
+解题思路：
+设链表的长度为N。设置两个指针p1和p2，先让p1移动k个节点，则还有n-k个节点可以移动。
+此时让p1和p2同时移动，可以知道当p1移动到链表的结尾时，p2移动到n-k个节点处
+该位置就是倒数第k个节点
+
+
+public class Solution {
+    public ListNode FindKthToTail(ListNode head,int k) {
+        //判断头指针是否为空
+        if(head == null)
+            return null;
+        //设置p1指针为头指针
+        ListNode p1 = head;
+        while(p1 != null && k-- >0)
+            //p1移动k个节点
+            p1 = p1.next;
+         //如果没有移动完k个节点则返回空
+        if(k > 0)
+            return null;
+         //设置p2指针为头指针
+        ListNode p2 = head;
+        //当p1等于空的时候结束移动
+        while(p1 != null){
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+        //则p2就是倒数第k个节点
+        return p2;
+    }
+}
