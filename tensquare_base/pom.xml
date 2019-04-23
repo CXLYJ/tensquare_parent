@@ -36,6 +36,12 @@
             <version>12c</version>
         </dependency>
 
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+
     </dependencies>
 
 
