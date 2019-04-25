@@ -10,9 +10,9 @@ import java.util.Set;
 /**
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
- * @date ：2019/4/23 10:23
+ * @date ：2019/4/23 17:13
  */
-public class redisClusterTest {
+public class redisCluster {
 
     public static void main(String[] args) {
         JedisPoolConfig poolConfig = new JedisPoolConfig();
