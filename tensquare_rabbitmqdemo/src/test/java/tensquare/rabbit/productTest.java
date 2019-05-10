@@ -38,7 +38,11 @@ public class productTest {
      */
     @Test
     public void testMessage3(){
-        rabbitTemplate.convertAndSend("topic84","good.log","主题模式");
+        //全部匹配
+//        rabbitTemplate.convertAndSend("topic84","good.log","主题模式");
+
+        //good.#,#.log,good.log匹配的规则
+        rabbitTemplate.convertAndSend("topic84","good.aaa","主题模式");
     }
 
 }

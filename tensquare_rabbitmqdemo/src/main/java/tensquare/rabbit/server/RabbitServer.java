@@ -42,11 +42,21 @@ public class RabbitServer {
         }
         LOGGER.info("生成的随机验证码为：{}",code);
         //2.将验证码存入redis中
-        redisTemplate.opsForValue().set("mailcode_"+mail, code +"", 5, TimeUnit.MINUTES); //五分钟过期
+        redisTemplate.opsForValue().set("mailcode_"+ mail, code +"", 5, TimeUnit.MINUTES); //五分钟过期
         //3.将验证码和手机号发送到rabbitmq中
         Map<String,Object> map = new HashMap();
         map.put("mail",mail);
         map.put("code",code+"");
+        LOGGER.info("开始发送短信...");
+        sendMails("mail",map);
+    }
+
+    /**
+     * rabbitmq发送邮件
+     * @param mail
+     * @param map
+     */
+    private void sendMails(String mail, Map<String, Object> map) {
         rabbitTemplate.convertAndSend("mail",map);
     }
 
