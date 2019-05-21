@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * LeetCode-按照字符出现次数对字符串排序
  */
-public class Solution07 {
+public class Solution7 {
 
     /**
      * 题目描述
@@ -29,10 +29,13 @@ public class Solution07 {
      * 说明:“e”出现两次，“r”和“t”都出现一次。所以e必须同时出现在r和t之前。因此“eetr”也是一个有效的答案
      */
 
-    public String frequencySort(String s){
+    public static String frequencySort(String s){
         Map<Character,Integer> frequencyForNum = new HashMap<>();
         for (char c : s.toCharArray()){
             //getOrDefault返回指定键所映射的值，或defaultVaule如果此映射包含该键的映射
+//            int a = frequencyForNum.getOrDefault(c,0);
+//            int b = frequencyForNum.getOrDefault(c,0) + 1;
+            //(frequencyForNum.getOrDefault(c,0) + 1)当出现相同的key值时在原来的基础上再加1
             frequencyForNum.put(c, frequencyForNum.getOrDefault(c,0) + 1);
         }
 
@@ -57,6 +60,11 @@ public class Solution07 {
             }
         }
         return str.toString();
+    }
+
+    public static void main(String[] args) {
+        String s = "tree";
+        System.out.println(frequencySort(s));
     }
 
 }
