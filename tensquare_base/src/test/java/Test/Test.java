@@ -1,4 +1,4 @@
-package leetCode;
+package Test;
 
 /**
  * @author ：lyj
