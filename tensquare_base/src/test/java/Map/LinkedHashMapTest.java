@@ -11,6 +11,8 @@ import java.util.Map;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2019/7/5 17:38
+ *
+ * linkedHashMap的扩容用法
  */
 public class LinkedHashMapTest {
 
