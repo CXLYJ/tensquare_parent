@@ -218,9 +218,9 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      * tie-breakers.
      *
      * The use and transitions among plain vs tree modes is
-     * complicated by the existence of subclass LinkedHashMap. See
+     * complicated by the existence of subclass LinkedHashMapTest. See
      * below for hook methods defined to be invoked upon insertion,
-     * removal and access that allow LinkedHashMap internals to
+     * removal and access that allow LinkedHashMapTest internals to
      * otherwise remain independent of these mechanics. (This also
      * requires that a map instance be passed to some utility methods
      * that may create new nodes.)
@@ -288,7 +288,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 
     /**
      * Basic hash bin node, used for most entries.  (See below for
-     * TreeNode subclass, and in LinkedHashMap for its Entry subclass.)
+     * TreeNode subclass, and in LinkedHashMapTest for its Entry subclass.)
      */
     static class Node<K,V> implements Map.Entry<K,V> {
         final int hash;
@@ -1741,14 +1741,14 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     }
 
     /* ------------------------------------------------------------ */
-    // LinkedHashMap support
+    // LinkedHashMapTest support
 
 
     /*
      * The following package-protected methods are designed to be
-     * overridden by LinkedHashMap, but not by any other subclass.
+     * overridden by LinkedHashMapTest, but not by any other subclass.
      * Nearly all other internal methods are also package-protected
-     * but are declared final, so can be used by LinkedHashMap, view
+     * but are declared final, so can be used by LinkedHashMapTest, view
      * classes, and HashSet.
      */
 
@@ -1785,7 +1785,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         size = 0;
     }
 
-    // Callbacks to allow LinkedHashMap post-actions
+    // Callbacks to allow LinkedHashMapTest post-actions
     void afterNodeAccess(Node<K,V> p) { }
     void afterNodeInsertion(boolean evict) { }
     void afterNodeRemoval(Node<K,V> p) { }
@@ -1807,7 +1807,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     // Tree bins
 
     /**
-     * Entry for Tree bins. Extends LinkedHashMap.Entry (which in turn
+     * Entry for Tree bins. Extends LinkedHashMapTest.Entry (which in turn
      * extends Node) so can be used as extension of either regular or
      * linked node.
      */
