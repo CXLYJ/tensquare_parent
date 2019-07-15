@@ -1,5 +1,8 @@
 package java8;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 import java.time.chrono.IsoChronology;
 import java.util.ArrayList;
@@ -10,6 +13,8 @@ import java.util.List;
  * @email: : iclyj@iclyj.cn
  * @date ：2019/7/8 17:43
  */
+@NoArgsConstructor
+@Data
 public class Person {
 
     public enum Sex {

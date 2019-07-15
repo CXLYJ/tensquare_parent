@@ -2,7 +2,8 @@ spring:
   rabbitmq:
     host: 118.25.26.200
   redis:
-    host: 47.102.125.192
+    host: 118.25.26.200
+    password: 123456
   mail:
     host: smtp.qq.com
     username: 298692628@qq.com

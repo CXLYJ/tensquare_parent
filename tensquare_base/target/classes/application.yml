@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.43.41:3306/tensquare_base? characterEncoding=utf‐8
     username: root
-    password: root
+    password: iclyj
   jpa:
     database: mysql
     show-sql: true
