@@ -17,17 +17,17 @@ public class HelloA {
 
     public HelloA(){
         //构造函数
-        System.out.printf("A 的构造函数" + "\n");
+        System.out.println("A 的构造函数");
     }
 
     {
         //构造代码块
-        System.out.printf("A 的构造代码块" + "\n");
+        System.out.println("A 的构造代码块");
     }
 
     static {
         //静态代码块
-        System.out.printf("A 的静态代码块" + "\n");
+        System.out.println("A 的静态代码块");
     }
 
     public static void main(String[] args) {
