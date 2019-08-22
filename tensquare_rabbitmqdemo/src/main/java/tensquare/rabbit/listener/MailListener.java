@@ -41,7 +41,7 @@ public class MailListener {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(sender);
         message.setTo(mail); //发送邮件的邮箱
-        message.setSubject("主题：验证码");
+        message.setSubject("中国太平洋：验证码");
         message.setText(code);
         mailSender.send(message);
     }
