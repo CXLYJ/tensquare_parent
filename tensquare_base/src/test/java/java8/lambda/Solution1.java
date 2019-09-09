@@ -38,7 +38,7 @@ public class Solution1 {
      */
 
     /**
-     * TODO 需要待改造成lambda写法 (待定)
+     * TODO 需要待改造成lambda写法 (待定写法)
      * @param nums
      * @param target
      * @return
