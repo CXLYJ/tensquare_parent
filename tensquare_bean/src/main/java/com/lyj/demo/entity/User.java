@@ -1,8 +1,10 @@
-package com.lyj.entity;
+package com.lyj.demo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.stereotype.Component;
 
 /**
  * @author ：lyj
@@ -11,7 +13,9 @@ import lombok.ToString;
  */
 @ToString
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
+@Component
 public class User {
 
     private String userName;
