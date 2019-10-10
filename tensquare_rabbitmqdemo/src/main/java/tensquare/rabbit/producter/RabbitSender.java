@@ -7,6 +7,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
+import tensquare.rabbit.entity.Order;
 
 import java.util.Map;
 
@@ -49,7 +50,15 @@ public class RabbitSender {
         rabbitTemplate.setReturnCallback(returnCallback);
         // id + 时间 全剧唯一
         CorrelationData cd = new CorrelationData("123456789");
-        rabbitTemplate.convertAndSend("exchange-1", "springboot.hello", msg, cd);
+        rabbitTemplate.convertAndSend("exchange-2", "springboot.hello", msg, cd);
+    }
+
+    public void sendOrder(Order order){
+        rabbitTemplate.setConfirmCallback(confirmCallback);
+        rabbitTemplate.setReturnCallback(returnCallback);
+        // id + 时间 全剧唯一
+        CorrelationData cd = new CorrelationData("987654321");
+        rabbitTemplate.convertAndSend("exchange-3", "springboot.bcd", order, cd);
     }
 
 }
