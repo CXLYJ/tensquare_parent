@@ -1,12 +1,12 @@
 spring:
   rabbitmq:
-    host: localhost
+    host: 118.25.26.200
   redis:
-    host: localhost
+    host: 118.25.26.200
     password: 123456
   mail:
     host: smtp.qq.com
     username: 298692628@qq.com
-    password: bxyitdysvzajbgdi56444
+    password: bxyitdysvzajbgdi
 server:
   port: 8090

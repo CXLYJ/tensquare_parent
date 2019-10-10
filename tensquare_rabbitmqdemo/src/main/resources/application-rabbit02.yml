@@ -14,3 +14,16 @@ spring:
         max-concurrency: 10
         concurrency: 5
         acknowledge-mode: manual #手工签收
+
+
+rabbitmq:
+  order:
+    queue:
+      name: queue-3
+      durable: true
+    exchange:
+      name: exchange-3
+      durable: true
+      type: topic
+      ignoreDeclarationExceptions: true
+    key: springboot.*

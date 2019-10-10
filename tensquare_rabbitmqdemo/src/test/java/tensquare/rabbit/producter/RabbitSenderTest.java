@@ -33,17 +33,20 @@ public class RabbitSenderTest {
     }
 
 
-    public Order getOrder(){
-        return
-                Order.builder()
-                    .id("001")
-                    .name("奶茶")
-                    .build();
-    }
+//    public Order getOrder(){
+//        return
+//                Order.builder()
+//                    .id("001")
+//                    .name("奶茶")
+//                    .build();
+//    }
 
     @Test
     public void testSender2(){
-        Order order = getOrder();
+        Order order = Order.builder()
+                        .id("001")
+                        .name("奶茶")
+                        .build();
         rabbitSender.sendOrder(order);
     }
 
