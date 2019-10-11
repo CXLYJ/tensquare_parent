@@ -3,6 +3,7 @@ package tensquare.rabbit.producter;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
@@ -21,6 +22,12 @@ public class RabbitSender {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
+    @Value("${rabbitmq.order.exchange.name}")
+    private String exchange;
+
+    @Value("${rabbitmq.order.key}")
+    private String routingKey;
 
     final RabbitTemplate.ConfirmCallback confirmCallback = new RabbitTemplate.ConfirmCallback() {
         @Override
@@ -58,7 +65,7 @@ public class RabbitSender {
         rabbitTemplate.setReturnCallback(returnCallback);
         // id + 时间 全剧唯一
         CorrelationData cd = new CorrelationData("987654321");
-        rabbitTemplate.convertAndSend("exchange-3", "springboot.bcd", order, cd);
+        rabbitTemplate.convertAndSend(exchange, routingKey, order, cd);
     }
 
 }
