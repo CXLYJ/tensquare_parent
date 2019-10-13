@@ -28,6 +28,7 @@ public class Test4 {
         list.add(ss);
         list.add(aa);
 
+        //lambda的使用
         List<String> newList = list.stream().map(Person :: getName).filter(
                 ee -> StringUtils.hasLength(ee)
         ).distinct().collect(Collectors.toList());

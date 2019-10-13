@@ -1,0 +1,29 @@
+spring:
+  rabbitmq:
+    addresses: 192.168.1.174:5672
+    username: guest
+    password: guest
+    virtual-host: /
+    connection-timeout: 15000
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+    listener:
+      simple:
+        max-concurrency: 10
+        concurrency: 5
+        acknowledge-mode: manual #手工签收
+
+
+rabbitmq:
+  order:
+    queue:
+      name: queue-3
+      durable: true
+    exchange:
+      name: exchange-3
+      durable: true
+      type: topic
+      ignoreDeclarationExceptions: true
+    key: springboot.*
