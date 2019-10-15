@@ -12,6 +12,8 @@ package NewOff;
  *
  * 排序算法的成本模型是比较和交换的次数。
  *
+ * 选择排序
+ *
  */
 public abstract class Sort<T extends Comparable<T>>{
 

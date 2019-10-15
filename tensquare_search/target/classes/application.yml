@@ -1,8 +1,0 @@
-server:
-  port: 9007
-spring:
-  application:
-    name: tensquare_search #指定服务名
-  data:
-    elasticsearch:
-      cluster-nodes: 172.20.10.3:9300
