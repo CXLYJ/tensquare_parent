@@ -4,6 +4,8 @@ package NewOff;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2019/10/14 22:18
+ *
+ * 选择排序
  */
 public class Selection<T extends Comparable<T>> extends Sort<T>{
     @Override
