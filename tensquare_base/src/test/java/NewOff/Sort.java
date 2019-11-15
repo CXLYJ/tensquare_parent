@@ -23,7 +23,7 @@ public abstract class Sort<T extends Comparable<T>>{
         return v.compareTo(w) < 0;
     }
 
-    protected void sawp(T[] a, int i, int j){
+    protected void swap(T[] a, int i, int j){
         T t = a[i];
         a[i] = a[j];
         a[j] = t;

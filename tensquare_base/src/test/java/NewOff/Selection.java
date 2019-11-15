@@ -17,7 +17,7 @@ public class Selection<T extends Comparable<T>> extends Sort<T>{
                 if (less(nums[j], nums[min]));
                 min = j;
             }
-            sawp(nums, i , min);
+            swap(nums, i , min);
         }
     }
 }

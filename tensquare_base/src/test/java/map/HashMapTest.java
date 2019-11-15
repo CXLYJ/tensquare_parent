@@ -1,4 +1,4 @@
-package Map;
+package map;
 
 import java.util.*;
 
@@ -49,9 +49,9 @@ public class HashMapTest {
         System.out.println(treeMap);
 
         ArrayList<Map.Entry<Integer,String>> list1 = new ArrayList<>(hashMap.entrySet());
-//        Collections.sort(list1, new Comparator<Map.Entry<Integer, String>>() {
+//        Collections.sort(list1, new Comparator<map.Entry<Integer, String>>() {
 //            @Override
-//            public int compare(Map.Entry<Integer, String> o1, Map.Entry<Integer, String> o2) {
+//            public int compare(map.Entry<Integer, String> o1, map.Entry<Integer, String> o2) {
 //                return o1.getValue().compareTo(o2.getValue()); //升序，前边加负号为降序
 //            }
 //        });

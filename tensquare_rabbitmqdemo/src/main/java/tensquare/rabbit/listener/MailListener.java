@@ -10,7 +10,7 @@
 //import org.springframework.mail.javamail.JavaMailSender;
 //import org.springframework.stereotype.Component;
 //
-//import java.util.Map;
+//import java.util.map;
 //
 ///**
 // * Created by lyj on 2019/1/22.
@@ -33,7 +33,7 @@
 //     * @param map
 //     */
 //    @RabbitHandler
-//    public void setMailSender(Map<String,Object> map){
+//    public void setMailSender(map<String,Object> map){
 //        String mail = String.valueOf(map.get("mail"));
 //        String code = String.valueOf(map.get("code"));
 //        LOGGER.info("手机号：{}",map.get("mail"));

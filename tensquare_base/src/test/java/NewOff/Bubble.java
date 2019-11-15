@@ -18,7 +18,7 @@ public class Bubble <T extends Comparable<T>> extends Sort<T>{
            for (int j = 0; j < i; j++){
                if (less(nums[j + 1], nums[j])){
                    isSorted = false;
-                   sawp(nums, j, j + 1);
+                   swap(nums, j, j + 1);
                }
            }
        }
