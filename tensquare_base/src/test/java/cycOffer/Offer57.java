@@ -12,6 +12,12 @@ import java.util.Arrays;
  */
 public class Offer57 {
 
+    /**
+     * 动态规划思想
+     * @param array
+     * @param sum
+     * @return
+     */
     public static ArrayList<Integer> FindNumbersWithSum(int[] array, int sum){
         if (array == null || array.length == 0)
             return new ArrayList<>();
