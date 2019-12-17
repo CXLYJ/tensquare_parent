@@ -9,6 +9,12 @@ package cycOffer;
  */
 public class Offer62 {
 
+    /**
+     * 递归思想
+     * @param n
+     * @param m
+     * @return
+     */
     public int LastRemaining_Solution(int n, int m){
         if (n == 0)     /* 特殊输入的处理 */
             return -1;
