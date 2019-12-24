@@ -11,6 +11,11 @@ import java.util.Arrays;
  */
 public class offer61 {
 
+    /**
+     * 动态规划
+     * @param nums
+     * @return
+     */
     public boolean isContinuous(int[] nums){
         if (nums.length < 5)
             return false;
