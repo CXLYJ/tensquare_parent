@@ -12,7 +12,7 @@ public class Solution32 {
      * @param array 数组
      * @return 最大和
      */
-    public int FindGreatestSumOfSubArray(int[] array){
+    public static int FindGreatestSumOfSubArray(int[] array){
         int n = array.length;
         int[] res = new int[n];
         res[0] = array[0];
@@ -22,6 +22,11 @@ public class Solution32 {
             max = Math.max(max, res[i]);
         }
         return max;
+    }
+
+    public static void main(String[] args) {
+        int[] res = new int[]{1,2,3,5,6,-1,0,6,9};
+        System.out.println(FindGreatestSumOfSubArray(res));
     }
 
 }
