@@ -9,7 +9,6 @@ public class Solution32 {
 
     /**
      * 求连续子数组的最大和
-     *
      * @param array 数组
      * @return 最大和
      */
