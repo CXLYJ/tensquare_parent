@@ -17,7 +17,7 @@ package cycOffer;
  * 2
  *
  */
-public class duplicate {
+public class Duplicate {
 
     public boolean duplicate(int[] nums, int length, int[] duplication){
         if (nums == null || length < 0)
