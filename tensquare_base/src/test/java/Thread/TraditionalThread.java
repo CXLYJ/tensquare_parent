@@ -5,7 +5,7 @@ package Thread;
  * @email: : iclyj@iclyj.cn
  * @date ：2020/3/30 17:04
  *
- * 线程创建方式
+ * 线程创建两种方式
  */
 public class TraditionalThread {
 
