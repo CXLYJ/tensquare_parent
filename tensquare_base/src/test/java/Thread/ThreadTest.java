@@ -12,6 +12,8 @@ import java.util.stream.IntStream;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2020/3/14 21:08
+ *
+ * 线程池
  */
 @Slf4j
 public class ThreadTest {
