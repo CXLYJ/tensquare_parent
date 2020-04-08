@@ -7,6 +7,8 @@ import java.util.concurrent.Executors;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2020/3/31 16:33
+ *
+ * 缓存的线程池
  */
 public class ThreadPool2 {
 
