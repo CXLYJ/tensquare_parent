@@ -1,4 +1,4 @@
-package Map;
+package map;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -49,17 +49,17 @@ public class HashMapCode {
     }
 
     public static void sortTreeMap(){
-//        Map<String,String> map = new TreeMap<>(); //大写字母的ASCII码都小于小写字母所以不会正常排序
-//        Map<String,String> map = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+//        map<String,String> map = new TreeMap<>(); //大写字母的ASCII码都小于小写字母所以不会正常排序
+//        map<String,String> map = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 
-//        Map<String,String> map = new TreeMap<>(new Comparator<String>() {
+//        map<String,String> map = new TreeMap<>(new Comparator<String>() {
 //            @Override
 //            public int compare(String o1, String o2) {
 //               return o2.compareTo(o1); //将两个对象翻转过来逆序的
 //            }
 //        });
 
-//        Map<String,String> map = new TreeMap<>(Collections.reverseOrder());
+//        map<String,String> map = new TreeMap<>(Collections.reverseOrder());
 
         Map<String,String> map = new TreeMap<>(Collections.reverseOrder(String.CASE_INSENSITIVE_ORDER)); //忽略大小写逆序
 
@@ -73,7 +73,7 @@ public class HashMapCode {
     }
 
     public static void sortTreeMapDate(){
-//        Map<String,Integer> map = new TreeMap<>();
+//        map<String,Integer> map = new TreeMap<>();
 
         Map<String,Integer> map = new TreeMap<>(new Comparator<String>() {
 

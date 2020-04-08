@@ -36,7 +36,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
- * Hash table based implementation of the <tt>Map</tt> interface.  This
+ * Hash table based implementation of the <tt>map</tt> interface.  This
  * implementation provides all of the optional map operations, and permits
  * <tt>null</tt> values and the <tt>null</tt> key.  (The <tt>HashMap</tt>
  * class is roughly equivalent to <tt>Hashtable</tt>, except that it is
@@ -97,7 +97,7 @@ import java.util.function.Function;
  * {@link Collections#synchronizedMap Collections.synchronizedMap}
  * method.  This is best done at creation time, to prevent accidental
  * unsynchronized access to the map:<pre>
- *   Map m = Collections.synchronizedMap(new HashMap(...));</pre>
+ *   map m = Collections.synchronizedMap(new HashMap(...));</pre>
  *
  * <p>The iterators returned by all of this class's "collection view methods"
  * are <i>fail-fast</i>: if the map is structurally modified at any time after
@@ -492,9 +492,9 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 
     /**
      * Constructs a new <tt>HashMap</tt> with the same mappings as the
-     * specified <tt>Map</tt>.  The <tt>HashMap</tt> is created with
+     * specified <tt>map</tt>.  The <tt>HashMap</tt> is created with
      * default load factor (0.75) and an initial capacity sufficient to
-     * hold the mappings in the specified <tt>Map</tt>.
+     * hold the mappings in the specified <tt>map</tt>.
      *
      * @param   m the map whose mappings are to be placed in this map
      * @throws  NullPointerException if the specified map is null
@@ -505,7 +505,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     }
 
     /**
-     * Implements Map.putAll and Map constructor
+     * Implements map.putAll and map constructor
      *
      * @param m the map
      * @param evict false when initially constructing this map, else
@@ -572,7 +572,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     }
 
     /**
-     * Implements Map.get and related methods
+     * Implements map.get and related methods
      *
      * @param hash hash for key
      * @param key the key
@@ -627,7 +627,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     }
 
     /**
-     * Implements Map.put and related methods
+     * Implements map.put and related methods
      *
      * @param hash hash for key
      * @param key the key
@@ -815,7 +815,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     }
 
     /**
-     * Implements Map.remove and related methods
+     * Implements map.remove and related methods
      *
      * @param hash hash for key
      * @param key the key
@@ -1063,7 +1063,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         }
     }
 
-    // Overrides of JDK8 Map extension methods
+    // Overrides of JDK8 map extension methods
 
     @Override
     public V getOrDefault(Object key, V defaultValue) {

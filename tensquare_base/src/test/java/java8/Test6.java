@@ -1,22 +1,53 @@
 package java8;
 
+<<<<<<< HEAD
+import java.util.ArrayList;
+import java.util.List;
+=======
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
 
 /**
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
+<<<<<<< HEAD
+ * @date ：2019/11/8
+=======
  * @date ：2020/3/18 17:19
  *
  * java8流的初步调研
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
  */
 public class Test6 {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
+        List<String> stringCollection = new ArrayList<>();
+        stringCollection.add("ddd2");
+        stringCollection.add("aaa2");
+        stringCollection.add("bbb1");
+        stringCollection.add("aaa1");
+        stringCollection.add("bbb3");
+        stringCollection.add("ccc");
+        stringCollection.add("bbb2");
+        stringCollection.add("ddd1");
+
+        stringCollection.stream()
+                .filter((s) -> s.startsWith("a"))
+                .forEach(System.out::println);
+
+        stringCollection.stream().
+                sorted().filter((s) -> s.startsWith("a"))
+                .forEach(System.out::println);
+
+
+        
+=======
 
         //通过stream方法把list或者数组转换成流
         Arrays.asList("a1","a2","a3").stream().forEach(System.out :: println);
@@ -58,6 +89,7 @@ public class Test6 {
                 .mapToLong(x -> 1L)
                 .mapToObj(x -> "")
                 .collect(Collectors.toList());
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
 
     }
 
