@@ -2,18 +2,28 @@ package cycOffer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
 
 /**
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
+<<<<<<< HEAD
  * @date ：2019/12/6
  *
  * 和为 S 的两个数字
+=======
+ * @date ：2019/12/6 22:25
+ *
+ * 和为S的两个数
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
  */
 public class Offer57 {
 
     /**
+<<<<<<< HEAD
      * 题目描述
      *
      * 输入一个递增排序的数组和一个数字 S，
@@ -31,10 +41,14 @@ public class Offer57 {
      * 如果 sum > target，移动较大的元素，使 sum 变小一些；
      * 如果 sum < target，移动较小的元素，使 sum 变大一些。
      *
+=======
+     * 动态规划思想
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
      * @param array
      * @param sum
      * @return
      */
+<<<<<<< HEAD
      public static ArrayList<Integer> FindNumbersWithSum(int[] array, int sum){
          int i = 0, j = array.length - 1;
          while (i < j){
@@ -72,6 +86,18 @@ public class Offer57 {
                 return new ArrayList<>(Arrays.asList(array[left],array[right]));
             if (total < sum)
                 left ++;
+=======
+    public static ArrayList<Integer> FindNumbersWithSum(int[] array, int sum){
+        if (array == null || array.length == 0)
+            return new ArrayList<>();
+        int left = 0, right = array.length - 1;
+        while (left < right){
+            int count = array[left] + array[right];
+            if (count == sum)
+                return new ArrayList<>(Arrays.asList(array[left], array[right]));
+            if (count < sum)
+                left++;
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
             else
                 right --;
         }
@@ -79,6 +105,7 @@ public class Offer57 {
     }
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         int[] array= {1,2,3,4,5,6,7,8,9};
         int sum = 9;
         List<Integer> result = FindNumbersWithSum(array, sum);
@@ -87,4 +114,11 @@ public class Offer57 {
             System.out.println(s);
         }
     }
+=======
+        int [] array = {1,2,3,4,5,6,7,8,9};
+        int sum = 5;
+        System.out.println(FindNumbersWithSum(array, sum));
+    }
+
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
 }

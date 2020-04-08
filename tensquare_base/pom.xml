@@ -61,10 +61,16 @@
         </dependency>
 
         <dependency>
+<<<<<<< HEAD
             <groupId>net.sf.json-lib</groupId>
             <artifactId>json-lib</artifactId>
             <version>2.4</version>
             <classifier>jdk15</classifier>
+=======
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+>>>>>>> 596333d6044502121d888ee6e1adb95961d34db5
         </dependency>
 
 
