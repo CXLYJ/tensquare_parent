@@ -7,6 +7,8 @@ import java.util.Map;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2020/4/10
+ *
+ * 线程调用
  */
 public class WrongInit {
 
