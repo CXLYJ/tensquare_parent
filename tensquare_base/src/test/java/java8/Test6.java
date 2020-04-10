@@ -12,12 +12,8 @@ import java.util.stream.Stream;
 /**
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
-<<<<<<< HEAD
  * @date ：2020/3/18 17:19
  *
-=======
- * @date ：2019/11/8
->>>>>>> 16aed8af0adefbed7992b249aa0d71b172a1fcc2
  * java8流的初步调研
  */
 public class Test6 {
@@ -41,11 +37,6 @@ public class Test6 {
                 sorted().filter((s) -> s.startsWith("a"))
                 .forEach(System.out::println);
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 16aed8af0adefbed7992b249aa0d71b172a1fcc2
 
         //通过stream方法把list或者数组转换成流
         Arrays.asList("a1","a2","a3").stream().forEach(System.out :: println);
