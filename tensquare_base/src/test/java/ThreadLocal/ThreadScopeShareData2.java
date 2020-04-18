@@ -4,6 +4,8 @@ import java.util.Random;
 
 /**
  * Created by lyj on 2019/1/30.
+ *
+ * ThreadLocal的用法
  */
 public class ThreadScopeShareData2 {
 
