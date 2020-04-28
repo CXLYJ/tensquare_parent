@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
  * @email: : iclyj@iclyj.cn
  * @date ：2020/3/31 16:18
  *
- * newFixedThreadPool的线程池
+ * newFixedThreadPool固定线程池
  */
 public class ThreadPool {
 

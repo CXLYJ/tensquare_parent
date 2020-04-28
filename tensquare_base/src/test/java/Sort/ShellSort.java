@@ -6,7 +6,7 @@ import java.util.Random;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2019/3/20 15:15
- * 希尔排序
+ * 希尔排序总结
  */
 public class ShellSort {
 
