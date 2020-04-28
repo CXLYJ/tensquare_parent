@@ -1,0 +1,24 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: tensquare-base
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://118.25.26.200:3306/blog_test?characterEncoding=utf-8
+    username: root
+    password: iclyj
+  jpa:
+    database: mysql
+    show-sql: true
+
+#server:
+#  port: 8082
+#spring:
+#  datasource:
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    url: jdbc:oracle:thin:@10.186.121.197:1521:ydcdb
+#    username: ydc
+#    password: ydc$RFV518k
+#    tomcat:
+#      remove-abandoned-timeout: 1200
