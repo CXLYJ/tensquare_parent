@@ -8,7 +8,7 @@ import java.util.Map;
  * @email: : iclyj@iclyj.cn
  * @date ：2020/5/21
  *
- * 取出数组中重复的数字
+ * 取出数组中重复的数字（时间复杂度的对比）
  */
 public class Test4 {
 
