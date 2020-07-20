@@ -25,7 +25,12 @@ public class MenuTree {
         return treeMenus;
     }
 
-    //递归，建立子树结构
+    /**
+     * 递归，建立子树结构
+     *
+     * @param menuNode
+     * @return
+     */
     private Menu buildChildTree(Menu menuNode) {
         List<Menu> childMenu = new ArrayList<>();
         menuList.forEach(menu -> {
@@ -37,7 +42,11 @@ public class MenuTree {
         return menuNode;
     }
 
-    //获取根节点
+    /**
+     * 获取根节点
+     *
+     * @return
+     */
     private List<Menu> getRootNode() {
         List<Menu> rootMenuList = new ArrayList<>();
         menuList.forEach(menu -> {
