@@ -7,6 +7,8 @@ import java.util.List;
  * @author ：lyj
  * @email: : iclyj@iclyj.cn
  * @date ：2020/7/13 21:55
+ *
+ * 递归菜单
  */
 public class MenuTree {
 
