@@ -5,12 +5,14 @@ spring:
     name: tensquare-base
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://118.25.26.200:3306/blog_test?characterEncoding=utf-8
+    url: jdbc:mysql://127.0.0.1:3306/blog_test?characterEncoding=utf-8
     username: root
-    password: iclyj
+    password: root
   jpa:
     database: mysql
     show-sql: true
+    hibernate:
+      ddl-auto: create # 自动生成表结构
 
 #server:
 #  port: 8082
